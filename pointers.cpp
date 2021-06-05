@@ -5,7 +5,7 @@ int main()
 {
 
     int x = 20;
-    cout << x;
+    cout << x << endl;
     //int *ptr = &x;
     //*ptr  = 25; //x will be changed from 20 to 25
     int *ptr = new int(20);
