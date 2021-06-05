@@ -44,7 +44,7 @@ void insertNode(int value)
     else
     {
         last = head;
-        while (last.next != NULL)
+        while (last->next != NULL)
         {
             last = last->next;
         }
@@ -77,7 +77,7 @@ void deleteNode(int value)
     current = head;
     prev = head;
 
-    if (current - > data == value)
+    if (current -> data == value)
     {
         head = current->next;
         free(current);
@@ -105,7 +105,7 @@ void deleteBegin()
 {
     if (head == NULL)
     {
-        cout << "linked list is empty"
+        cout << "linked list is empty";
     }
     else
     {
