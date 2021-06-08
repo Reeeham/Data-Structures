@@ -36,7 +36,7 @@ int main(){
 
     display(); //  will print 2 3 4 5 6 
 
-    cout << "peek = " << peek();
+    cout << "peek = " << peek(); // 2
 
     return 0;
 }
