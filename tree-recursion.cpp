@@ -63,6 +63,18 @@ private:
             return getMinHelper(temp->left);
         }
     }
+    int getHeightHelper(Node* temp){
+        if( temp == nullptr)
+        {
+            return -1;
+        }else{
+            int leftSubtree = getHeightHelper(temp ->left);
+            int rightSubtree = getHeightHelper(temp->right);
+              return 1+ max(leftSubtree,rightSubtree);
+        }
+
+      
+    }
 
 public:
     void add(int value)
@@ -82,6 +94,13 @@ public:
     }
     int getMax(){
         return getMaxHelper(root);
+    }
+    int getHeight(){
+        if( root == nullptr){
+            return -1;
+        }else{
+            return getHeightHelper(root);
+        }
     }
 };
 
